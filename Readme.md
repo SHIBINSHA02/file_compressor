@@ -31,4 +31,4 @@ base64 Documentation
 
 
 ## Adding Links and Images
- ![images](Screenshot.png) as well.
+ !["images/Screenshot.png/"] as well.
