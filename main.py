@@ -1,7 +1,7 @@
 import zlib
 import base64
 
-with open("test.txt", "r", encoding="utf-8") as file:
+with open("Files/test.txt", "r", encoding="utf-8") as file:
     text = file.read()
 
 
@@ -10,7 +10,7 @@ print(text)
 
 
 try:
-    with open("comp.txt", "r") as fc:
+    with open("Files/comp.txt", "r") as fc:
         existing_data = fc.read()
     if existing_data:
         # If there is text in "comp.txt", don't overwrite it
@@ -24,10 +24,10 @@ try:
         print(base64_encoded_data)
 
         # Write the compressed and encoded data to the file
-        with open("comp.txt", "w") as fc:
+        with open("Files/comp.txt", "w") as fc:
             fc.write(base64_encoded_data)
 
-        with open("comp.txt", "r") as fc:
+        with open("Files/comp.txt", "r") as fc:
             data=fc.read()
             compressed_data = base64.b64decode(data)
 
@@ -46,10 +46,10 @@ except FileNotFoundError:
     print(base64_encoded_data)
 
   
-    with open("comp.txt", "w") as fc:
+    with open("Files/comp.txt", "w") as fc:
         fc.write(base64_encoded_data)
         
-    with open("comp.txt", "r") as fc:
+    with open("Files/comp.txt", "r") as fc:
         data=fc.read()
         compressed_data = base64.b64decode(data)
 
