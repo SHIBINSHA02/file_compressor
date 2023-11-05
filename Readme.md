@@ -30,5 +30,7 @@ zlib Documentation
 base64 Documentation
 
 
-## Adding Links and Images
- !["images/Screenshot.png/"] as well.
+## Screenshot
+
+
+![Compression](images/images/Screenshot.png)
