@@ -33,4 +33,4 @@ base64 Documentation
 ## Screenshot
 
 
-![Compression](images/images/Screenshot.png)
+![Compression](images/Screenshot.png)
